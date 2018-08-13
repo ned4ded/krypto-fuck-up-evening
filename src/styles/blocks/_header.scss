@@ -1,0 +1,12 @@
+.header {
+  padding-top: 50px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    flex-flow: column, nowrap;
+    justify-content: center;
+
+    width: 100%;
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "krypto-fuck-up-evening",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ned4ded/jury.online.git"
+  },
+  "author": "Bazhenov Eugen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ned4ded/jury.online/issues"
+  },
+  "homepage": "https://github.com/ned4ded/jury.online#readme",
+  "dependencies": {
+    "autoprefixer": "7.x",
+    "babel-core": "6.x",
+    "babel-preset-env": "1.x",
+    "browser-sync": "2.x",
+    "gulp": "3.x",
+    "gulp-babel": "7.x",
+    "gulp-concat": "2.x",
+    "gulp-postcss": "7.x",
+    "gulp-rename": "1.x",
+    "gulp-sass": "3.x",
+    "gulp-sourcemaps": "2.x",
+    "gulp-svg-sprite": "1.x",
+    "gulp-svgstore": "6.x",
+    "gulp-uglify": "3.x",
+    "postcss-scss": "1.x",
+    "xmldom": "0.x"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "6.x"
+  }
+}

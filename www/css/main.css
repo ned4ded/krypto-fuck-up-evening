@@ -1,0 +1,59 @@
+body {
+  margin: 0; }
+
+.bg {
+  background-color: #e7daa8; }
+  .bg__group {
+    position: relative; }
+    .bg__group--number--one {
+      min-height: 1415px; }
+    .bg__group--number--two {
+      min-height: 1680px; }
+  .bg__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
+  .bg__img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+    .bg__img--group--one {
+      min-height: 1415px;
+      min-width: 1440px;
+      background-image: url("../assets/imgs/part-one-pattern-sunrise.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: top; }
+    .bg__img--group--two {
+      min-height: 1680;
+      min-width: 1440px; }
+  .bg__part-two {
+    height: 1680px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center, top; }
+
+.header {
+  padding-top: 50px; }
+  .header__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column, nowrap;
+            flex-flow: column, nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%; }
