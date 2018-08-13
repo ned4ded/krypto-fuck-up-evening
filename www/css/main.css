@@ -32,7 +32,7 @@ body {
       background-size: 100%;
       background-position: top; }
     .bg__img--group--two {
-      min-height: 1680;
+      min-height: 1680px;
       min-width: 1440px; }
   .bg__part-two {
     height: 1680px;
