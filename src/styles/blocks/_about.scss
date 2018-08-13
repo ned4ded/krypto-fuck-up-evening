@@ -1,0 +1,14 @@
+.about {
+  margin-top: -45px;
+  margin-bottom: -250px;
+
+  &__heading {
+    display: inline-block;
+    margin-bottom: 120px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: center;
+  }
+}
