@@ -1,5 +1,76 @@
 .jumbotron {
   &__heading {
     margin-top: 75px;
+    margin-bottom: 25px;
+  }
+
+  &__date {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    font-family: $ff-circe;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 28px;
+    color: $text-color-green-dark;
+    text-transform: uppercase;
+
+    &-item {
+      display: flex;
+      flex-flow: row nowrap;
+      position: relative;
+      padding: 0 23px;
+
+      &:first-of-type {
+        padding-left: 0;
+      }
+      &:last-of-type {
+        padding-right: 0;
+      }
+
+      &:not(:first-of-type) {
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 2px;
+          height: 57px;
+          background-color: $text-color-green-dark;
+
+          left: 0;
+          top: 46%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    &-column {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+    }
+
+    &--size {
+      &--big {
+        height: 100%;
+        font-weight: 300;
+        font-size: 81px;
+        line-height: 81px;
+      }
+
+      &--x-small {
+        font-size: 18px;
+        line-height: 20px;
+      }
+
+      &--small {
+        font-size: 27px;
+      }
+    }
+
+    &--contrast {
+      color: $text-color-orange;
+    }
   }
 }

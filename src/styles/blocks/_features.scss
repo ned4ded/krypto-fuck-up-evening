@@ -1,0 +1,64 @@
+.features {
+  background-color: $bg-contrast-color;
+  padding-bottom: 100px;
+  padding-top: 70px;
+  margin-top: -275px;
+  position: relative;
+  z-index: 1;
+
+  &__block {
+    &--margin {
+      &--wide {
+        margin-bottom: 145px
+      }
+    }
+  }
+
+  &__heading {
+    display: inline-block;
+    margin-bottom: 128px;
+  }
+
+  &__img--drinks {
+    position: relative;
+    left: -28px;
+    margin-top: -173px;
+  }
+
+  &__img--chairs {
+    position: relative;
+    left: 7px;
+    margin-top: -205px;
+  }
+
+  &__paragraph {
+    color: $text-color-green-dark;
+    text-transform: uppercase;
+    font-size: 22.5px;
+    line-height: 45px;
+    font-family: $ff-circe;
+    font-weight: 500;
+    text-align: left;
+    margin: 0;
+
+    &--position {
+      &--first {
+        max-width: 485px;
+      }
+
+      &--second {
+        max-width: 415px;
+      }
+    }
+
+    &-line {
+      display: block;
+    }
+  }
+
+  &__emphasis {
+    display: block;
+    font-size: 37.5px;
+    line-height: 60px;
+  }
+}
