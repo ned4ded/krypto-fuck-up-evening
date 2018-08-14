@@ -425,12 +425,51 @@ body {
   .whom__block--position--second {
     margin-top: -45px; }
   .whom__block--position--third {
-    margin-top: 100px; }
+    margin-top: 100px;
+    margin-bottom: 108px; }
   .whom__img {
     display: block;
     margin-top: 85px;
     position: relative;
     left: 23px; }
+  .whom__speaker {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .whom__speakers {
+      list-style: none;
+      margin: 0;
+      padding: 0 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .whom__speaker-img {
+      border-radius: 100%; }
+    .whom__speaker-name {
+      font-family: "Circe", sans-serif;
+      font-weight: 500;
+      color: #1c302e;
+      font-size: 18px;
+      text-align: center;
+      text-transform: uppercase; }
   .whom__paragraph {
     max-width: 615px;
     font-family: "Circe", sans-serif;

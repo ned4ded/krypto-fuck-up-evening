@@ -12,6 +12,7 @@
       }
       &--third {
         margin-top: 100px;
+        margin-bottom: 108px;
       }
     }
   }
@@ -21,6 +22,36 @@
     margin-top: 85px;
     position: relative;
     left: 23px;
+  }
+
+  &__speaker {
+    width: 20%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    &s {
+      list-style: none;
+      margin: 0;
+      padding: 0 30px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-img {
+      border-radius: 100%;
+    }
+
+    &-name {
+      font-family: $ff-circe;
+      font-weight: 500;
+      color: $text-color-green-dark;
+      font-size: 18px;
+      text-align: center;
+      text-transform: uppercase;
+    }
   }
 
   &__paragraph {
@@ -47,10 +78,12 @@
       line-height: 1.6;
     }
 
+
+
     &--position {
       &--forth {
         padding-left: 0;
-        
+
         &:not(:last-of-type) {
           margin-bottom: 0;
         }
