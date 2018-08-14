@@ -9,7 +9,13 @@
         min-height: 1415px;
       }
       &--two {
-        min-height: 1680px;
+        min-height: 1280px;
+      }
+      &--three {
+        min-height: 1080px;
+      }
+      &--four {
+        min-height: 1570px;
       }
     }
   }
@@ -46,20 +52,19 @@
       }
 
       &--two {
-        min-height: 1680px;
+        min-height: 1280px;
         min-width: 1440px;
       }
-    }
-  }
 
-  &__part {
-    &-two {
-      height: 1680px;
-      // background-image: linear-gradient(-45grad, transparent 29.7%, rgb(86, 145, 141) calc(29.7% + 1px), rgb(86, 145, 141) 61.5%, transparent calc(61.5% + 1px)),
+      &--three {
+        min-height: 1080px;
+        min-width: 1440px;
+      }
 
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: center, top;
+      &--four {
+        min-height: 1570px;
+        min-width: 1440px;
+      }
     }
   }
 }
