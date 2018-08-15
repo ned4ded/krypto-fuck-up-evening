@@ -5,6 +5,41 @@
   margin-top: -275px;
   position: relative;
   z-index: 1;
+  background-image: url('../assets/imgs/pattern-oldify.png');
+  background-repeat: repeat;
+  background-size: 100%;
+  background-position: center;
+
+  &:before {
+    display: block;
+    width: calc(100% - 30px);
+    height: 100%;
+    content: '';
+    background-image: url("../assets/imgs/part-one-pattern-sunrise.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    opacity: .4;
+    position: absolute;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    background-image: url('../assets/imgs/pattern-waves-yellow.png');
+    background-repeat: no-repeat;
+    width: 245px;
+    height: 291px;
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    // opacity: .03;
+  }
+
 
   &__block {
     &--margin {

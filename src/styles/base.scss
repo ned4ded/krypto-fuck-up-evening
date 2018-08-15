@@ -7,6 +7,7 @@ body {
 
 .heading {
   position: relative;
+  display: inline-block;
 
   &__line {
     font-family: $ff-bl;
@@ -68,6 +69,26 @@ body {
         left: 45%;
       }
     }
+  }
+}
+
+.oldify-img {
+  display: inline-block;
+  width: auto;
+  position: relative;
+
+  &:after {
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../assets/imgs/pattern-oldify.png');
+    background-repeat: repeat;
+    background-size: 100%;
+    background-position: center;
   }
 }
 

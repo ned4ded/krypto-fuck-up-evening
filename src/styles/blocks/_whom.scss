@@ -11,7 +11,7 @@
         margin-top: -45px;
       }
       &--third {
-        margin-top: 100px;
+        margin-top: 103px;
         margin-bottom: 108px;
       }
     }
@@ -37,7 +37,7 @@
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
     }
 
     &-img {

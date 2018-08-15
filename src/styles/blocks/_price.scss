@@ -1,0 +1,54 @@
+.price {
+  padding-top: 90px;
+
+  &__heading {
+    margin-bottom: 70px;
+  }
+
+  &__paragraph {
+    color: $text-color-green-dark;
+    text-transform: uppercase;
+    font-size: 22.5px;
+    line-height: 45px;
+    font-family: $ff-circe;
+    font-weight: 500;
+    text-align: left;
+    margin: 0;
+
+    &--position {
+      &--second {
+        margin-bottom: 45px;
+      }
+      &--third {
+        max-width: 575px;
+      }
+    }
+
+    &-line {
+      display: block;
+      margin: 0;
+
+      &--p-order {
+        &--second {
+          max-width: 620px;
+        }
+      }
+    }
+  }
+
+  &__emphasis {
+    display: block;
+    font-size: 37.5px;
+    line-height: 60px;
+    margin-bottom: 10px;
+  }
+
+  &__price-text {
+    font-size: 37.5px;
+    line-height: 60px;
+    font-weight: 400;
+    color: $text-color-orange;
+    display: inline-block;
+    padding-left: 15px;
+  }
+}
