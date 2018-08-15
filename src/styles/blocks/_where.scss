@@ -106,5 +106,12 @@
       }
     }
 
+    &-line {
+      display: block;
+
+      @include respond-to(lg) {
+        display: inline;
+      }
+    }
   }
 }

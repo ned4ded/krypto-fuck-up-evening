@@ -48,7 +48,8 @@
 
 body {
   margin: 0;
-  min-width: 600px; }
+  min-width: 600px;
+  overflow-x: hidden; }
 
 .heading {
   position: relative;
@@ -286,7 +287,7 @@ body {
       left: 50%;
       position: absolute;
       height: 100%;
-      width: 1440px;
+      width: 100%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
       @media (max-width: 1440px) {
@@ -845,12 +846,16 @@ body {
           -ms-flex-item-align: start;
               align-self: flex-start;
           margin-bottom: 15px; } }
+    .where__paragraph-line {
+      display: block; }
+      @media (max-width: 1199.98px) {
+        .where__paragraph-line {
+          display: inline; } }
 
 .whom {
   padding-top: 27px; }
   .whom__heading {
-    display: inline-block;
-    margin-bottom: 50px; }
+    display: inline-block; }
     @media (max-width: 1199.98px) {
       .whom__heading {
         margin-bottom: 80px; } }

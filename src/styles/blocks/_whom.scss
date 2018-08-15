@@ -3,7 +3,6 @@
 
   &__heading {
     display: inline-block;
-    margin-bottom: 50px;
 
     @include respond-to(lg) {
       margin-bottom: 80px;
