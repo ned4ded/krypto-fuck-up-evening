@@ -10,3 +10,26 @@ $text-color-green-light: #558e8a;
 $ff-bl: 'StrenuousBlack', sans-serif;
 $ff-amon: 'Amontillados', sans-serif;
 $ff-circe: 'Circe', sans-serif;
+
+$breakpoint-sm: 767.98px;
+$breakpoint-md: 991.98px;
+$breakpoint-lg: 1199.98px;
+
+$breakpoints: (
+  'sm': $breakpoint-sm,
+  'md': $breakpoint-md,
+  'lg': $breakpoint-lg,
+) !default;
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}

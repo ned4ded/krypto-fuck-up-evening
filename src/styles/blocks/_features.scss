@@ -10,6 +10,10 @@
   background-size: 100%;
   background-position: center;
 
+  @include respond-to(sm) {
+    margin-top: -145px;
+  }
+
   &:before {
     display: block;
     width: calc(100% - 30px);
@@ -44,7 +48,11 @@
   &__block {
     &--margin {
       &--wide {
-        margin-bottom: 145px
+        margin-bottom: 145px;
+
+        @include respond-to(md) {
+          margin-bottom: 30px;
+        }
       }
     }
   }
@@ -52,18 +60,48 @@
   &__heading {
     display: inline-block;
     margin-bottom: 128px;
+
+    @include respond-to(md) {
+      margin-bottom: 80px;
+    }
   }
 
   &__img--drinks {
     position: relative;
     left: -28px;
     margin-top: -173px;
+    width: 100%;
+    height: auto;
+    max-width: 533px;
+
+    @include respond-to(lg) {
+      margin-top: -140px;
+      left: 0;
+    }
+
+    @include respond-to(md) {
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 0;
+    }
   }
 
   &__img--chairs {
     position: relative;
     left: 7px;
     margin-top: -205px;
+    width: 100%;
+    height: auto;
+    max-width: 535px;
+
+    @include respond-to(lg) {
+      margin-top: -115px;
+      width: 380px;
+    }
+
+    @include respond-to(md) {
+      display: none;
+    }
   }
 
   &__paragraph {
@@ -83,11 +121,19 @@
 
       &--second {
         max-width: 415px;
+
+        @include respond-to(md) {
+          max-width: 100%;
+        }
       }
     }
 
     &-line {
       display: block;
+
+      @include respond-to(md) {
+        display: inline-block;
+      }
     }
   }
 

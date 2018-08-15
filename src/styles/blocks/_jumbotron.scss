@@ -2,6 +2,26 @@
   &__heading {
     margin-top: 75px;
     margin-bottom: 25px;
+
+    @include respond-to(lg) {
+      margin-top: 0;
+    }
+
+    @include respond-to(md) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    max-width: 549px;
+
+    @include respond-to(md) {
+      margin: auto;
+      display: block;
+    }
   }
 
   &__date {
@@ -15,11 +35,19 @@
     color: $text-color-green-dark;
     text-transform: uppercase;
 
+    @include respond-to(md) {
+      justify-content: center;
+    }
+
     &-item {
       display: flex;
       flex-flow: row nowrap;
       position: relative;
       padding: 0 23px;
+
+      @include respond-to(md) {
+        padding: 0 16px;
+      }
 
       &:first-of-type {
         padding-left: 0;

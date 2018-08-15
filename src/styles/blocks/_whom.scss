@@ -3,16 +3,30 @@
 
   &__heading {
     display: inline-block;
+    margin-bottom: 50px;
+
+    @include respond-to(lg) {
+      margin-bottom: 80px;
+    }
   }
 
   &__block {
     &--position {
       &--second {
         margin-top: -45px;
+
+        @include respond-to(lg) {
+          margin-top: 0;
+        }
       }
       &--third {
         margin-top: 103px;
         margin-bottom: 108px;
+
+        @include respond-to(lg) {
+          margin-top: 50px;
+          margin-bottom: 25px;
+        }
       }
     }
   }
@@ -22,6 +36,10 @@
     margin-top: 85px;
     position: relative;
     left: 23px;
+
+    @include respond-to(lg) {
+      display: none;
+    }
   }
 
   &__speaker {
@@ -30,14 +48,27 @@
     flex-flow: column nowrap;
     align-items: center;
 
+    @include respond-to(lg) {
+      margin-bottom: 10px;
+      width: 33.33%;
+    }
+
+    @include respond-to(sm) {
+      width: 50%;
+    }
+
     &s {
       list-style: none;
       margin: 0;
       padding: 0 30px;
       display: flex;
-      flex-flow: row nowrap;
+      flex-flow: row wrap;
       justify-content: space-between;
       align-items: flex-start;
+
+      @include respond-to(lg) {
+        justify-content: space-around;
+      }
     }
 
     &-img {
@@ -65,8 +96,17 @@
     margin: 0;
     padding-left: 30px;
 
+    @include respond-to(lg) {
+      padding-left: 0;
+      max-width: 100%;
+    }
+
     &-line {
       display: block;
+
+      @include respond-to(lg) {
+        display: inline-block;
+      }
     }
 
     &:not(:last-of-type) {
@@ -86,6 +126,10 @@
 
         &:not(:last-of-type) {
           margin-bottom: 0;
+        }
+
+        @include respond-to(lg) {
+          max-width: 815px;
         }
       }
 

@@ -1,6 +1,10 @@
 .from-you {
   padding-top: 175px;
 
+  @include respond-to(lg) {
+    padding-top: 50px;
+  }
+
   &__block {
     display: flex;
     flex-flow: column nowrap;
@@ -8,6 +12,10 @@
     &--align {
       &--right {
         align-items: flex-end;
+
+        @include respond-to(md) {
+          align-items: flex-start;
+        }
       }
     }
   }
@@ -16,11 +24,26 @@
     position: relative;
     right: -57px;
     margin-top: 21px;
+
+    @include respond-to(md) {
+      display: none;
+    }
   }
 
   &__heading {
-    display: inline-block;
     margin-bottom: 54px;
+
+    @include respond-to(lg) {
+      margin-bottom: 100px;
+    }
+
+    @include respond-to(md) {
+      margin-bottom: 85px;
+    }
+
+    @include respond-to(sm) {
+      text-align: center;
+    }
   }
 
   &__paragraph {
@@ -33,6 +56,11 @@
     letter-spacing: 0.2px;
     text-transform: uppercase;
     margin: 0;
+
+    @include respond-to(md) {
+      max-width: 100%;
+      margin-bottom: 35px;
+    }
   }
 
   &__list {
@@ -44,6 +72,29 @@
     padding-top: 135px;
     padding-left: 108px;
     list-style: none;
+
+    @include respond-to(lg) {
+      padding-left: 0;
+    }
+
+    @include respond-to(md) {
+      display: flex;
+      align-items: center;
+      flex-flow: column nowrap;
+      justify-content: center;
+
+      width: 500px;
+      max-width: 100%;
+      height: 500px;
+      margin: auto;
+      padding-top: 0;
+
+      border-radius: 100%;
+      background-color: $bg-contrast-color;
+      background-image: url('../assets/imgs/pattern-oldify.png');
+      background-repeat: repeat;
+      background-size: 100%;
+    }
 
     &:before {
       content: '';
@@ -58,6 +109,15 @@
       background-size: 100%;
       background-repeat: no-repeat;
       z-index: -1;
+
+      @include respond-to(lg) {
+        top: 12px;
+        right: -178px;
+      }
+
+      @include respond-to(md) {
+        display: none;
+      }
     }
 
     &-item {
@@ -69,6 +129,10 @@
       text-align: left;
       text-transform: uppercase;
       margin-bottom: 25px;
+
+      @include respond-to(md) {
+        width: 300px;
+      }
     }
 
     &-emphasis {

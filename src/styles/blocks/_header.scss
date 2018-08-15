@@ -13,6 +13,15 @@
     top: 50px;
     left: -95px;
     border-radius: 100%;
+
+    @media(max-width: 1440px) {
+      left: -15px;
+    }
+
+    @include respond-to(sm) {
+      top: 15px;
+      left: 15px;
+    }
   }
 
   &:after {
@@ -25,7 +34,17 @@
     top: 50px;
     right: -95px;
     border-radius: 100%;
+
+    @media(max-width: 1440px) {
+      right: -15px;
+    }
+
+    @include respond-to(sm) {
+      top: 15px;
+      right: 15px;
+    }
   }
+
 
   &__logo {
     display: flex;
@@ -34,5 +53,10 @@
     justify-content: center;
 
     width: 100%;
+
+    &-link {
+      display: inline-block;
+      width: auto;
+    }
   }
 }

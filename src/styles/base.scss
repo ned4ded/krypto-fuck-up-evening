@@ -3,6 +3,7 @@
 
 body {
   margin: 0;
+  min-width: 600px;
 }
 
 .heading {
@@ -66,7 +67,13 @@ body {
 
     &--position {
       &--jumbotron {
-        left: 45%;
+        left: 50%;
+
+
+        @include respond-to(md) {
+          margin: auto;
+          display: block;
+        }
       }
     }
   }

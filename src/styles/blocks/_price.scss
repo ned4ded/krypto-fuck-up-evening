@@ -1,6 +1,14 @@
 .price {
   padding-top: 90px;
 
+  @include respond-to(lg) {
+    padding-top: 0;
+  }
+
+  @include respond-to(md) {
+    padding-bottom: 25px;
+  }
+
   &__heading {
     margin-bottom: 70px;
   }
@@ -31,6 +39,7 @@
       &--p-order {
         &--second {
           max-width: 620px;
+
         }
       }
     }
