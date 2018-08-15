@@ -1086,8 +1086,7 @@ body {
       margin: auto;
       margin: 70px auto 43px;
       padding-left: 137px;
-      text-align: center;
-      max-width: 332px; }
+      text-align: center; }
       @media (max-width: 991.98px) {
         .about-us__img--logo {
           margin: 30px auto 60px;
