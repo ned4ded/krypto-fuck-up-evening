@@ -197,10 +197,18 @@
 
     &--group {
       &--five {
-        height: 1850px;
-        width: 1440px;
         z-index: -2;
         top: -1000px;
+        min-height: 1850px;
+        min-width: 1440px;
+        z-index: -2;
+        top: -1000px;
+        left: 50%;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }
