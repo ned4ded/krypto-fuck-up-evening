@@ -1048,59 +1048,59 @@ body {
     .about-us {
       padding-bottom: 25px; } }
   .about-us:before {
-    display: block;
-    content: '';
-    width: 17px;
-    height: 17px;
-    background-color: #f48a01;
     position: absolute;
     bottom: 0;
     left: -95px;
-    border-radius: 100%; }
-    @media (max-width: 1440px) {
-      .about-us:before {
-        left: -15px; } }
+    display: block;
+    width: 17px;
+    height: 17px;
+    content: '';
+    border-radius: 100%;
+    background-color: #f48a01; }
     @media (max-width: 991.98px) {
       .about-us:before {
         bottom: 15px; } }
     @media (max-width: 767.98px) {
       .about-us:before {
         left: 15px; } }
+    @media (max-width: 1440px) {
+      .about-us:before {
+        left: -15px; } }
   .about-us:after {
+    position: absolute;
+    right: -95px;
+    bottom: 0;
     display: block;
-    content: '';
     width: 17px;
     height: 17px;
-    background-color: #f48a01;
-    position: absolute;
-    bottom: 0;
-    right: -95px;
-    border-radius: 100%; }
-    @media (max-width: 1440px) {
-      .about-us:after {
-        right: -15px; } }
+    content: '';
+    border-radius: 100%;
+    background-color: #f48a01; }
     @media (max-width: 991.98px) {
       .about-us:after {
         bottom: 15px; } }
     @media (max-width: 767.98px) {
       .about-us:after {
         right: 15px; } }
+    @media (max-width: 1440px) {
+      .about-us:after {
+        right: -15px; } }
   .about-us__heading {
-    padding-top: 240px;
-    margin-bottom: 75px; }
+    margin-bottom: 75px;
+    padding-top: 240px; }
     @media (max-width: 1199.98px) {
       .about-us__heading {
         padding-top: 0; } }
     @media (max-width: 991.98px) {
       .about-us__heading {
-        text-align: center;
         display: block;
-        margin-bottom: 50px; } }
+        margin-bottom: 50px;
+        text-align: center; } }
   .about-us__link {
-    text-decoration: underline;
-    color: #1c302e;
     -webkit-transition: all ease-in .1s;
-    transition: all ease-in .1s; }
+    transition: all ease-in .1s;
+    text-decoration: underline;
+    color: #1c302e; }
     .about-us__link:hover {
       color: white; }
     .about-us__link:active {
@@ -1113,20 +1113,20 @@ body {
       top: -30px;
       right: -125px;
       max-width: 343px; }
-      @media (max-width: 1440px) {
-        .about-us__img--seal {
-          right: -60px; } }
       @media (max-width: 1199.98px) {
         .about-us__img--seal {
-          right: auto;
           top: auto;
-          margin-top: 65px;
-          margin-left: auto;
+          right: auto;
           display: block;
-          margin-right: 20px; } }
+          margin-top: 65px;
+          margin-right: 20px;
+          margin-left: auto; } }
       @media (max-width: 991.98px) {
         .about-us__img--seal {
           margin: 0 auto 0; } }
+      @media (max-width: 1440px) {
+        .about-us__img--seal {
+          right: -60px; } }
     .about-us__img--logo {
       display: block;
       margin: auto;
@@ -1138,21 +1138,31 @@ body {
           margin: 30px auto 60px;
           padding-left: 0; } }
   .about-us__paragraph {
+    margin: 0;
+    margin-bottom: 75px;
+    text-transform: uppercase;
+    color: #1c302e;
     font-family: "Circe", sans-serif;
     font-size: 22.5px;
     font-weight: 500;
-    color: #1c302e;
-    line-height: 2;
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 100px; }
+    line-height: 2; }
     .about-us__paragraph-line {
       display: block; }
       @media (max-width: 1199.98px) {
         .about-us__paragraph-line {
           display: inline-block; } }
-    .about-us__paragraph__logo {
-      display: inline-block;
-      width: auto; }
-    .about-us__paragraph__block {
-      text-align: right; }
+  .about-us__footnote {
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #1c302e;
+    font-family: "Circe", sans-serif;
+    font-size: 22.5px;
+    font-weight: 400;
+    line-height: 45px;
+    line-height: 1.2; }
+    .about-us__footnote-star {
+      position: relative;
+      margin-left: -13px; }
+      .about-us__footnote-star:before {
+        content: '*'; }
