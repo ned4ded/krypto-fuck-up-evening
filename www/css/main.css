@@ -920,7 +920,10 @@ body {
           -ms-flex-pack: distribute;
               justify-content: space-around; } }
     .whom__speaker-img {
-      border-radius: 100%; }
+      border-radius: 100%;
+      display: block;
+      width: auto;
+      height: auto; }
     .whom__speaker-name {
       font-family: "Circe", sans-serif;
       font-weight: 500;
@@ -928,6 +931,35 @@ body {
       font-size: 18px;
       text-align: center;
       text-transform: uppercase; }
+      .whom__speaker--unknown .whom__speaker-name {
+        display: none; }
+  .whom__img-container {
+    position: relative; }
+    .whom__img-container:after {
+      content: '?';
+      display: none;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      background-color: #574737;
+      background-image: url("../assets/imgs/pattern-oldify.png");
+      top: 0;
+      left: 0;
+      position: absolute;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      font-size: 120px;
+      font-family: "Circe", sans-serif;
+      font-weight: 500;
+      color: #e6daac; }
+      .whom__speaker--unknown .whom__img-container:after {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
   .whom__paragraph {
     max-width: 615px;
     font-family: "Circe", sans-serif;
@@ -952,6 +984,10 @@ body {
     .whom__paragraph--emphasis {
       font-size: 37.5px;
       line-height: 1.6; }
+    .whom__paragraph--position--first:not(:last-of-type) {
+      margin-bottom: 25px; }
+    .whom__paragraph--position--second:not(:last-of-type) {
+      margin-bottom: 5px; }
     .whom__paragraph--position--forth {
       padding-left: 0; }
       .whom__paragraph--position--forth:not(:last-of-type) {
@@ -1050,7 +1086,8 @@ body {
       .about-us:after {
         right: 15px; } }
   .about-us__heading {
-    padding-top: 240px; }
+    padding-top: 240px;
+    margin-bottom: 75px; }
     @media (max-width: 1199.98px) {
       .about-us__heading {
         padding-top: 0; } }
@@ -1059,6 +1096,15 @@ body {
         text-align: center;
         display: block;
         margin-bottom: 50px; } }
+  .about-us__link {
+    text-decoration: underline;
+    color: #1c302e;
+    -webkit-transition: all ease-in .1s;
+    transition: all ease-in .1s; }
+    .about-us__link:hover {
+      color: white; }
+    .about-us__link:active {
+      opacity: 0.7; }
   .about-us__img {
     position: relative;
     width: 100%;
@@ -1091,41 +1137,22 @@ body {
         .about-us__img--logo {
           margin: 30px auto 60px;
           padding-left: 0; } }
-  .about-us__logo {
-    display: inline-block;
-    width: auto; }
-  .about-us__block {
-    text-align: right; }
   .about-us__paragraph {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    width: 250px;
-    color: #1c302e;
-    font-size: 22.5px;
-    line-height: 45px;
     font-family: "Circe", sans-serif;
-    font-weight: 400;
-    text-align: left;
+    font-size: 22.5px;
+    font-weight: 500;
+    color: #1c302e;
+    line-height: 2;
+    text-transform: uppercase;
     margin: 0;
-    margin-right: 15px;
-    line-height: 1.2; }
-    @media (max-width: 991.98px) {
-      .about-us__paragraph {
-        display: block;
-        width: auto;
-        text-align: center; } }
+    margin-bottom: 100px; }
     .about-us__paragraph-line {
       display: block; }
-      @media (max-width: 991.98px) {
+      @media (max-width: 1199.98px) {
         .about-us__paragraph-line {
-          display: inline; } }
-      .about-us__paragraph-line--note {
-        margin-left: -13px;
-        position: relative; }
-        .about-us__paragraph-line--note:before {
-          content: '*'; }
+          display: inline-block; } }
+    .about-us__paragraph__logo {
+      display: inline-block;
+      width: auto; }
+    .about-us__paragraph__block {
+      text-align: right; }

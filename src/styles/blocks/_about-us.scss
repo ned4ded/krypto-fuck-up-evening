@@ -55,6 +55,7 @@
 
   &__heading {
     padding-top: 240px;
+    margin-bottom: 75px;
 
     @include respond-to(lg) {
       padding-top: 0;
@@ -64,6 +65,20 @@
       text-align: center;
       display: block;
       margin-bottom: 50px;
+    }
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: $text-color-green-dark;
+    transition: all ease-in .1s;
+
+    &:hover {
+      color: white;
+    }
+
+    &:active {
+      opacity: 0.7;
     }
   }
 
@@ -109,6 +124,24 @@
     }
   }
 
+  &__paragraph {
+    font-family: $ff-circe;
+    font-size: 22.5px;
+    font-weight: 500;
+    color: $text-color-green-dark;
+    line-height: 2;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 100px;
+
+    &-line {
+      display: block;
+
+      @include respond-to(lg) {
+        display: inline-block;
+      }
+    }
+
   &__logo {
     display: inline-block;
     width: auto;
@@ -118,43 +151,6 @@
   &__block {
     text-align: right;
   }
-
-  &__paragraph {
-    display: inline-flex;
-    flex-flow: column nowrap;
-    width: 250px;
-    color: $text-color-green-dark;
-    font-size: 22.5px;
-    line-height: 45px;
-    font-family: $ff-circe;
-    font-weight: 400;
-    text-align: left;
-    margin: 0;
-    margin-right: 15px;
-    line-height: 1.2;
-
-    @include respond-to(md) {
-      display: block;
-      width: auto;
-      text-align: center;
-    }
-
-    &-line {
-      display: block;
-
-      @include respond-to(md) {
-        display: inline;
-      }
-
-
-      &--note {
-        margin-left: -13px;
-        position: relative;
-        &:before {
-          content: '*';
-        }
-      }
-    }
 
   }
 }

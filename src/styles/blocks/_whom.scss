@@ -72,6 +72,10 @@
 
     &-img {
       border-radius: 100%;
+
+      display: block;
+      width: auto;
+      height: auto;
     }
 
     &-name {
@@ -81,7 +85,36 @@
       font-size: 18px;
       text-align: center;
       text-transform: uppercase;
+
+      .whom__speaker--unknown & { display: none; }
     }
+  }
+
+  &__img-container {
+    position: relative;
+
+    &:after {
+      content: '?';
+      display: none;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      background-color: rgb(87, 71, 55);
+      background-image: url('../assets/imgs/pattern-oldify.png');
+      top: 0;
+      left: 0;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      font-size: 120px;
+      font-family: $ff-circe;
+      font-weight: 500;
+      color: $text-color-yellow-light;
+
+      .whom__speaker--unknown & { display: flex; }
+    }
+
+
   }
 
   &__paragraph {
@@ -120,6 +153,14 @@
 
 
     &--position {
+      &--first:not(:last-of-type) {
+        margin-bottom: 25px;
+      }
+
+      &--second:not(:last-of-type) {
+        margin-bottom: 5px;
+      }
+
       &--forth {
         padding-left: 0;
 
