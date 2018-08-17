@@ -1049,7 +1049,7 @@ body {
       padding-bottom: 25px; } }
   .about-us:before {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: -95px;
     display: block;
     width: 17px;
@@ -1069,7 +1069,7 @@ body {
   .about-us:after {
     position: absolute;
     right: -95px;
-    bottom: 0;
+    bottom: 10px;
     display: block;
     width: 17px;
     height: 17px;
@@ -1086,7 +1086,7 @@ body {
       .about-us:after {
         right: -15px; } }
   .about-us__heading {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     padding-top: 240px; }
     @media (max-width: 1199.98px) {
       .about-us__heading {
@@ -1094,7 +1094,6 @@ body {
     @media (max-width: 991.98px) {
       .about-us__heading {
         display: block;
-        margin-bottom: 50px;
         text-align: center; } }
   .about-us__link {
     -webkit-transition: all ease-in .1s;
@@ -1139,13 +1138,16 @@ body {
           padding-left: 0; } }
   .about-us__paragraph {
     margin: 0;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     text-transform: uppercase;
     color: #1c302e;
     font-family: "Circe", sans-serif;
     font-size: 22.5px;
     font-weight: 500;
     line-height: 2; }
+    @media (max-width: 767.98px) {
+      .about-us__paragraph {
+        text-align: justify; } }
     .about-us__paragraph-line {
       display: block; }
       @media (max-width: 1199.98px) {
@@ -1153,7 +1155,7 @@ body {
           display: inline-block; } }
   .about-us__footnote {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     text-align: center;
     color: #1c302e;
     font-family: "Circe", sans-serif;

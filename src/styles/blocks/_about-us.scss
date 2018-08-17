@@ -7,7 +7,7 @@
 
   &:before {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: -95px;
 
     display: block;
@@ -35,7 +35,7 @@
   &:after {
     position: absolute;
     right: -95px;
-    bottom: 0;
+    bottom: 10px;
 
     display: block;
 
@@ -60,7 +60,7 @@
   }
 
   &__heading {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     padding-top: 240px;
 
     @include respond-to(lg) {
@@ -68,8 +68,6 @@
     }
     @include respond-to(md) {
       display: block;
-
-      margin-bottom: 50px;
 
       text-align: center;
     }
@@ -139,7 +137,7 @@
 
   &__paragraph {
     margin: 0;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
 
     text-transform: uppercase;
 
@@ -149,6 +147,10 @@
     font-size: 22.5px;
     font-weight: 500;
     line-height: 2;
+
+    @include respond-to(sm) {
+      text-align: justify;
+    }
 
     &-line {
       display: block;
@@ -161,7 +163,7 @@
 
   &__footnote {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 
     text-align: center;
 
