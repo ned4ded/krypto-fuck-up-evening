@@ -1153,6 +1153,8 @@ body {
       @media (max-width: 1199.98px) {
         .about-us__paragraph-line {
           display: inline-block; } }
+      .about-us__paragraph-line--margin--wide {
+        padding-bottom: 15px; }
   .about-us__footnote {
     margin: 0;
     margin-bottom: 35px;

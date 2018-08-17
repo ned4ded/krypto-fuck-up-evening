@@ -158,6 +158,10 @@
       @include respond-to(lg) {
         display: inline-block;
       }
+
+      &--margin--wide {
+        padding-bottom: 15px;
+      }
     }
   }
 
