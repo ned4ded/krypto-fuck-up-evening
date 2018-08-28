@@ -24,7 +24,8 @@
       bottom: 15px;
     }
     @include respond-to(sm) {
-      left: 15px;
+      // left: 15px;
+      display: none;
     }
 
     @media(max-width: 1440px) {
@@ -149,7 +150,7 @@
     line-height: 2;
 
     @include respond-to(sm) {
-      text-align: justify;
+      // text-align: justify;
     }
 
     &-line {

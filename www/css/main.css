@@ -1110,7 +1110,7 @@ body {
         bottom: 15px; } }
     @media (max-width: 767.98px) {
       .about-us:before {
-        left: 15px; } }
+        display: none; } }
     @media (max-width: 1440px) {
       .about-us:before {
         left: -15px; } }
@@ -1193,9 +1193,6 @@ body {
     font-size: 22.5px;
     font-weight: 500;
     line-height: 2; }
-    @media (max-width: 767.98px) {
-      .about-us__paragraph {
-        text-align: justify; } }
     .about-us__paragraph-line {
       display: block; }
       @media (max-width: 1199.98px) {
