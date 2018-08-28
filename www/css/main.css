@@ -785,6 +785,9 @@ body {
     display: block;
     font-size: 37.5px;
     line-height: 60px; }
+    @media (max-width: 991.98px) {
+      .features__emphasis {
+        margin-top: 30px; } }
   .features__host-img {
     display: none; }
 
