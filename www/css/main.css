@@ -192,7 +192,11 @@ body {
           min-height: 1570px;
           height: auto; } }
     .bg__group--number--five {
+      margin-top: -295px;
       min-height: 1460px; }
+      @media (max-width: 1199.98px) {
+        .bg__group--number--five {
+          margin-top: -400px; } }
   .bg__container {
     position: absolute;
     top: 0;

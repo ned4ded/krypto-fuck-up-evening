@@ -108,8 +108,13 @@
         }
       }
       &--five {
+        margin-top: -295px;
         min-height: 1460px;
 
+
+        @include respond-to(lg) {
+          margin-top: -400px;
+        }
 
       }
     }
